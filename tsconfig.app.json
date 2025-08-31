@@ -1,3 +1,39 @@
+//{
+//  "compilerOptions": {
+//    "target": "ES2020",
+//    "useDefineForClassFields": true,
+//    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+//    "module": "ESNext",
+//    "skipLibCheck": true,
+//
+//    /* Bundler mode (Vite) */
+//    "moduleResolution": "bundler",
+//    "allowImportingTsExtensions": true,
+//    "isolatedModules": true,
+//    "moduleDetection": "force",
+//    "noEmit": true,
+//    "jsx": "react-jsx",
+//
+//    /* Interop y JSON para i18n */
+//    "esModuleInterop": true,
+//    "resolveJsonModule": true,
+//
+//    /* Tipos globales (para i18next.d.ts) */
+//    "types": ["i18next"],
+//
+//    /* Calidad/Linting */
+//    "strict": true,
+//    "noUnusedLocals": true,
+//    "noUnusedParameters": true,
+//    "noFallthroughCasesInSwitch": true,
+//
+//    /* Opcional: rutas relativas más limpias desde src */
+//    "baseUrl": "./src"
+//  },
+//  "include": ["src"]
+//}
+
+
 {
   "compilerOptions": {
     "target": "ES2020",
@@ -6,7 +42,6 @@
     "module": "ESNext",
     "skipLibCheck": true,
 
-    /* Bundler mode (Vite) */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
@@ -14,21 +49,16 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    /* Interop y JSON para i18n */
     "esModuleInterop": true,
     "resolveJsonModule": true,
 
-    /* Tipos globales (para i18next.d.ts) */
-    "types": ["i18next"],
-
-    /* Calidad/Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    /* Opcional: rutas relativas más limpias desde src */
-    "baseUrl": "./src"
+    "typeRoots": ["./src/@types", "./node_modules/@types"]
+    /* Si tenías "baseUrl": "./src" y no lo necesitas, mejor quítalo para evitar colisiones */
   },
   "include": ["src"]
 }
