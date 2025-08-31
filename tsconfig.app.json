@@ -6,7 +6,7 @@
     "module": "ESNext",
     "skipLibCheck": true,
 
-    /* Bundler mode */
+    /* Bundler mode (Vite) */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
@@ -14,11 +14,21 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    /* Linting */
+    /* Interop y JSON para i18n */
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+
+    /* Tipos globales (para i18next.d.ts) */
+    "types": ["i18next"],
+
+    /* Calidad/Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Opcional: rutas relativas más limpias desde src */
+    "baseUrl": "./src"
   },
   "include": ["src"]
 }
